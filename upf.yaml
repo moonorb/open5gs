@@ -1,0 +1,11 @@
+logger:
+    file: /var/log/open5gs/upf.log
+
+upf:
+    pfcp:
+      - addr: 172.25.62.62
+    gtpu:
+      - addr: 172.25.62.62
+    subnet:
+      - addr: 10.45.0.1/16
+      - addr: 2001:230:cafe::1/48
