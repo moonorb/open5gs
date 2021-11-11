@@ -1,0 +1,16 @@
+#db_uri: mongodb://172.25.62.56/open5gs
+db_uri: mongodb://localhost/open5gs
+
+
+logger:
+    file: /var/log/open5gs/pcf.log
+pcf:
+    sbi:
+      - addr: 172.25.62.56
+        port: 7779
+
+nrf:
+    sbi:
+      - addr:
+          - 172.25.62.69
+        port: 7777
