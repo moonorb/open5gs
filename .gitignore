@@ -3,3 +3,4 @@ workingsinglenode
 3VM_setup
 stop
 start
+.gitignore
