@@ -1,0 +1,33 @@
+logger:
+    file: /var/log/open5gs/smf.log
+
+smf:
+    sbi:
+      - addr: 172.25.62.57
+        port: 7777
+    pfcp:
+      - addr: 172.25.62.57
+    gtpc:
+      - addr: 172.25.62.57
+    gtpu:
+      - addr: 172.25.62.57
+    subnet:
+      - addr: 10.45.0.1/16
+      - addr: 2001:230:cafe::1/48
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+      - 2001:4860:4860::8888
+      - 2001:4860:4860::8844
+    mtu: 1400
+    freeDiameter: /etc/freeDiameter/smf.conf
+
+nrf:
+    sbi:
+      - addr:
+          - 172.25.62.69
+        port: 7777
+
+upf:
+    pfcp:
+      - addr: 172.25.62.62
